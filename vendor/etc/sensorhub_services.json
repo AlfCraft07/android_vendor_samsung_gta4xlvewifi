@@ -1,0 +1,9 @@
+{
+    "model_name": "gta4xlvewifi",
+    "services": [
+        {"name": "CARRYING_DETECTION"},
+        {"name": "AUTO_ROTATION"},
+        {"name": "FREE_FALL_DETECTION"},
+        {"name": "STEP_COUNT_ALERT"}
+    ]
+}
