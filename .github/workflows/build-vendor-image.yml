@@ -1,6 +1,9 @@
 name: Build vendor.img
 
 on:
+  push:
+    branches:
+      - P613XXS8FZI4
   workflow_dispatch:
 
 permissions:
