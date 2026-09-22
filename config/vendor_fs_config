@@ -154,7 +154,6 @@ vendor/bin/hw/vendor.samsung.hardware.sysinput@1.3-service 0 2000 0755
 vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service 0 2000 0755
 vendor/bin/hw/vendor.samsung.hardware.tlc.blockchain@1.0-service 0 2000 0755
 vendor/bin/hw/vendor.samsung.hardware.tlc.hdm@1.1-service 0 2000 0755
-vendor/bin/hw/vendor.samsung.hardware.tlc.iccc@1.0-service 0 2000 0755
 vendor/bin/hw/vendor.samsung.hardware.tlc.kg@1.1-service 0 2000 0755
 vendor/bin/hw/vendor.samsung.hardware.tlc.ucm@2.0-service 0 2000 0755
 vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service 0 2000 0755
@@ -529,7 +528,6 @@ vendor/etc/init/vendor.samsung.hardware.sysinput@1.3-service.rc 0 0 0644
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc 0 0 0644
 vendor/etc/init/vendor.samsung.hardware.tlc.blockchain@1.0-service.rc 0 0 0644
 vendor/etc/init/vendor.samsung.hardware.tlc.hdm@1.1-service.rc 0 0 0644
-vendor/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc 0 0 0644
 vendor/etc/init/vendor.samsung.hardware.tlc.kg@1.1-service.rc 0 0 0644
 vendor/etc/init/vendor.samsung.hardware.tlc.ucm@2.0-service.rc 0 0 0644
 vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc 0 0 0644
@@ -782,7 +780,6 @@ vendor/etc/vintf/manifest/vendor.samsung.hardware.security.fkeymaster-service.xm
 vendor/etc/vintf/manifest/vendor.samsung.hardware.security.widevine.keyprov-service.xml 0 0 0644
 vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml 0 0 0644
 vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml 0 0 0644
-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml 0 0 0644
 vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.kg@1.1-manifest.xml 0 0 0644
 vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml 0 0 0644
 vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml 0 0 0644
@@ -2333,8 +2330,6 @@ vendor/lib64/vendor.samsung.hardware.tlc.blockchain@1.0.so 0 0 0644
 vendor/lib64/vendor.samsung.hardware.tlc.hdm@1.0.so 0 0 0644
 vendor/lib64/vendor.samsung.hardware.tlc.hdm@1.1-impl.so 0 0 0644
 vendor/lib64/vendor.samsung.hardware.tlc.hdm@1.1.so 0 0 0644
-vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0-impl.so 0 0 0644
-vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0.so 0 0 0644
 vendor/lib64/vendor.samsung.hardware.tlc.kg@1.0.so 0 0 0644
 vendor/lib64/vendor.samsung.hardware.tlc.kg@1.1.so 0 0 0644
 vendor/lib64/vendor.samsung.hardware.tlc.ucm@2.0-impl.so 0 0 0644
