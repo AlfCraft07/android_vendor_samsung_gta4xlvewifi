@@ -1,0 +1,56 @@
+name: Build vendor.img
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout vendor repository
+        uses: actions/checkout@v4
+
+      - name: Checkout QROM image builder
+        uses: actions/checkout@v4
+        with:
+          repository: tui2019/QuantumROM
+          path: qrom
+
+      - name: Prepare vendor build tree
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/vendor-build/vendor" "$RUNNER_TEMP/vendor-build/config"
+          cp -a vendor/. "$RUNNER_TEMP/vendor-build/vendor/"
+          cp config/vendor_fs_config "$RUNNER_TEMP/vendor-build/config/"
+          cp config/vendor_file_contexts "$RUNNER_TEMP/vendor-build/config/"
+
+      - name: Build vendor.img
+        run: |
+          set -euo pipefail
+          cd qrom
+          source scripts/QuantumRom.sh
+          BUILD_IMG "$RUNNER_TEMP/vendor-build" vendor erofs "$GITHUB_WORKSPACE/out"
+
+      - name: Validate vendor.img
+        run: |
+          set -euo pipefail
+          image_size="$(stat -c '%s' out/vendor.img)"
+          partition_size="$(tr -d '[:space:]' < config/vendor_size.txt)"
+          test "$image_size" -le "$partition_size"
+          sha256sum out/vendor.img | tee out/vendor.img.sha256
+          printf 'vendor.img size: %s bytes\n' "$image_size"
+          printf 'vendor partition limit: %s bytes\n' "$partition_size"
+
+      - name: Upload vendor.img
+        uses: actions/upload-artifact@v4
+        with:
+          name: vendor-img-${{ github.sha }}
+          path: |
+            out/vendor.img
+            out/vendor.img.sha256
+          if-no-files-found: error
+          retention-days: 14
