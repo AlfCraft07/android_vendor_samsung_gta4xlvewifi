@@ -184,7 +184,6 @@ vendor/bin/init.qti.qcv.sh 0 2000 0755
 vendor/bin/inotifyd 0 2000 0755
 vendor/bin/insmod 0 2000 0755
 vendor/bin/install 0 2000 0755
-vendor/bin/install-recovery.sh 0 0 0750
 vendor/bin/iod 0 2000 0755
 vendor/bin/ionice 0 2000 0755
 vendor/bin/iorenice 0 2000 0755
@@ -532,7 +531,6 @@ vendor/etc/init/vendor.samsung.hardware.tlc.kg@1.1-service.rc 0 0 0644
 vendor/etc/init/vendor.samsung.hardware.tlc.ucm@2.0-service.rc 0 0 0644
 vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc 0 0 0644
 vendor/etc/init/vendor.sensors.sscrpcd.rc 0 0 0644
-vendor/etc/init/vendor_flash_recovery.rc 0 0 0644
 vendor/etc/init/vndservicemanager.rc 0 0 0644
 vendor/etc/init/wifi.rc 0 0 0644
 vendor/etc/init/wifi_qcom.rc 0 0 0644
@@ -2356,7 +2354,6 @@ vendor/overlay/TetheringOverlay/TetheringOverlay_NoTelephony.apk 0 0 0644
 vendor/overlay/TetheringOverlay_Gsi 0 2000 0755
 vendor/overlay/TetheringOverlay_Gsi/TetheringOverlay_Gsi.apk 0 0 0644
 vendor/overlay/framework-res__auto_generated_rro_vendor.apk 0 0 0644
-vendor/recovery-from-boot.p 0 0 0644
 vendor/rfs 0 2000 0755
 vendor/rfs/apq 0 2000 0755
 vendor/rfs/apq/gnss 0 2000 0755

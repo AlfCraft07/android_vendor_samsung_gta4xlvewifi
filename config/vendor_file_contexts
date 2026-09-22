@@ -261,7 +261,6 @@
 /vendor/bin/insmod(/.*)? u:object_r:vendor_file:s0
 /vendor/bin/install u:object_r:vendor_file:s0
 /vendor/bin/install(/.*)? u:object_r:vendor_file:s0
-/vendor/bin/install-recovery\.sh u:object_r:vendor_install_recovery_exec:s0
 /vendor/bin/iod u:object_r:vendor_iod_exec:s0
 /vendor/bin/ionice u:object_r:vendor_file:s0
 /vendor/bin/ionice(/.*)? u:object_r:vendor_file:s0
@@ -740,7 +739,6 @@
 /vendor/etc/init/vendor\.samsung\.hardware\.wifi@2\.0-service\.rc u:object_r:vendor_configs_file:s0
 /vendor/etc/init/vendor\.qti\.media\.c2@1\.0-service\.rc u:object_r:vendor_configs_file:s0
 /vendor/etc/init/vendor\.sensors\.sscrpcd\.rc u:object_r:vendor_configs_file:s0
-/vendor/etc/init/vendor_flash_recovery\.rc u:object_r:vendor_configs_file:s0
 /vendor/etc/init/vndservicemanager\.rc u:object_r:vendor_configs_file:s0
 /vendor/etc/init/wifi\.rc u:object_r:vendor_configs_file:s0
 /vendor/etc/init/wifi_qcom\.rc u:object_r:vendor_configs_file:s0
@@ -2635,7 +2633,6 @@
 /vendor/overlay/TetheringOverlay_Gsi(/.*)? u:object_r:vendor_overlay_file:s0
 /vendor/overlay/TetheringOverlay_Gsi/TetheringOverlay_Gsi\.apk u:object_r:vendor_overlay_file:s0
 /vendor/overlay/framework-res__auto_generated_rro_vendor\.apk u:object_r:vendor_overlay_file:s0
-/vendor/recovery-from-boot\.p u:object_r:vendor_file:s0
 /vendor/rfs u:object_r:vendor_file:s0
 /vendor/rfs(/.*)? u:object_r:vendor_file:s0
 /vendor/rfs/apq u:object_r:vendor_file:s0
