@@ -28,6 +28,15 @@ fi
 mkdir -p "$OUT_DIR"
 rm -f "$OUT_IMG"
 
+# Clean VCS dummy artifacts (.gitkeep, .gitignore) so mkfs.erofs canned fs_config won't fail
+find "$SOURCE_DIR" -name ".git*" -delete 2>/dev/null || true
+
+restore_vcs_artifacts() {
+    # Restore any tracked .gitkeep files in git working tree
+    git checkout -- "$SOURCE_DIR" 2>/dev/null || true
+}
+trap restore_vcs_artifacts EXIT
+
 echo "=============================================="
 echo " Building vendor.img ($FS_TYPE)               "
 echo "=============================================="
