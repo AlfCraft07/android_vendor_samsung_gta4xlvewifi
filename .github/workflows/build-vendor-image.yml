@@ -6,8 +6,27 @@ on:
       - P613XXS8FZI4
       - main
       - master
+    paths-ignore:
+      - '**.md'
+      - '.gitignore'
   pull_request:
+    paths-ignore:
+      - '**.md'
+      - '.gitignore'
   workflow_dispatch:
+    inputs:
+      fs_type:
+        description: 'Filesystem type (erofs or ext4)'
+        required: true
+        default: 'erofs'
+        type: choice
+        options:
+          - erofs
+          - ext4
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
@@ -23,16 +42,34 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y erofs-utils
+          sudo apt-get install -y --no-install-recommends erofs-utils
 
       - name: Build vendor.img
         run: |
-          chmod +x ./build.sh
-          ./build.sh out erofs
+          chmod +x ./build.sh tools/*
+          ./build.sh out "${{ inputs.fs_type || 'erofs' }}"
 
       - name: Checksum vendor.img
         run: |
           sha256sum out/vendor.img | tee out/vendor.img.sha256
+
+      - name: Generate build summary
+        run: |
+          image_size="$(stat -c%s out/vendor.img)"
+          partition_size="$(tr -d '[:space:]' < config/vendor_size.txt)"
+          usage_pct="$(awk "BEGIN {printf \"%.2f\", ($image_size / $partition_size) * 100}")"
+          sha="$(cat out/vendor.img.sha256 | awk '{print $1}')"
+
+          cat <<EOF >> "$GITHUB_STEP_SUMMARY"
+          ### :package: Vendor Image Build Summary
+          | Metric | Value |
+          |---|---|
+          | **Filesystem** | ${{ inputs.fs_type || 'erofs' }} |
+          | **Image Size** | $(( image_size / 1024 / 1024 )) MB (\`$image_size\` bytes) |
+          | **Partition Limit** | $(( partition_size / 1024 / 1024 )) MB (\`$partition_size\` bytes) |
+          | **Capacity Used** | **$usage_pct%** |
+          | **SHA-256** | \`$sha\` |
+          EOF
 
       - name: Upload vendor.img
         uses: actions/upload-artifact@v4

@@ -33,13 +33,18 @@ echo " Building vendor.img ($FS_TYPE)               "
 echo "=============================================="
 
 if [ "$FS_TYPE" = "erofs" ]; then
-    MKFS_EROFS="$(command -v mkfs.erofs || true)"
-    if [ -z "$MKFS_EROFS" ]; then
-        echo "[-] Error: mkfs.erofs not found in PATH." >&2
-        echo "[-] Please install erofs-utils (e.g. 'sudo apt install erofs-utils')." >&2
+    if [ -x "$REPO_ROOT/tools/mkfs.erofs" ]; then
+        MKFS_EROFS="$REPO_ROOT/tools/mkfs.erofs"
+    else
+        MKFS_EROFS="$(command -v mkfs.erofs || true)"
+    fi
+
+    if [ -z "$MKFS_EROFS" ] || ! [ -x "$MKFS_EROFS" ]; then
+        echo "[-] Error: mkfs.erofs not found in tools/ or PATH." >&2
         exit 1
     fi
 
+    echo "[+] Using: $MKFS_EROFS"
     echo "[+] Packing $SOURCE_DIR -> $OUT_IMG"
 
     "$MKFS_EROFS" \
@@ -51,10 +56,20 @@ if [ "$FS_TYPE" = "erofs" ]; then
         -T 1199145600 \
         "$OUT_IMG" "$SOURCE_DIR"
 
+    if command -v fsck.erofs >/dev/null 2>&1; then
+        echo "[+] Validating image with fsck.erofs..."
+        fsck.erofs "$OUT_IMG"
+    fi
+
 elif [ "$FS_TYPE" = "ext4" ]; then
-    MAKE_EXT4FS="$(command -v make_ext4fs || true)"
-    if [ -z "$MAKE_EXT4FS" ]; then
-        echo "[-] Error: make_ext4fs not found in PATH." >&2
+    if [ -x "$REPO_ROOT/tools/make_ext4fs" ]; then
+        MAKE_EXT4FS="$REPO_ROOT/tools/make_ext4fs"
+    else
+        MAKE_EXT4FS="$(command -v make_ext4fs || true)"
+    fi
+
+    if [ -z "$MAKE_EXT4FS" ] || ! [ -x "$MAKE_EXT4FS" ]; then
+        echo "[-] Error: make_ext4fs not found in tools/ or PATH." >&2
         exit 1
     fi
 
@@ -63,6 +78,7 @@ elif [ "$FS_TYPE" = "ext4" ]; then
     EXTENDED_SIZE=$((SIZE + SIZE / 5))
     [ "$EXTENDED_SIZE" -lt 4349952 ] && EXTENDED_SIZE=4349952
 
+    echo "[+] Using: $MAKE_EXT4FS"
     echo "[+] Packing $SOURCE_DIR -> $OUT_IMG (ext4)"
 
     "$MAKE_EXT4FS" \
