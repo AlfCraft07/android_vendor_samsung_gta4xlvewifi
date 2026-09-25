@@ -1,0 +1,13 @@
+<manifest version="1.0" type="device">
+    <!-- Codec2 HAL service -->
+    <hal format="hidl">
+        <name>android.hardware.media.c2</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>default</instance>
+            <instance>software</instance>
+        </interface>
+    </hal>
+</manifest>
