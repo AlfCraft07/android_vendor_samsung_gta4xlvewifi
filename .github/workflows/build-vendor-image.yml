@@ -76,7 +76,6 @@ jobs:
         with:
           path: |
             out/vendor.img
-            out/vendor.img.sha256
           if-no-files-found: error
           retention-days: 14
           archive: false
