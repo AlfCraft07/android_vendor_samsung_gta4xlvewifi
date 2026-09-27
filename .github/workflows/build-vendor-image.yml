@@ -72,11 +72,11 @@ jobs:
           EOF
 
       - name: Upload vendor.img
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
-          name: vendor-img-${{ github.sha }}
           path: |
             out/vendor.img
             out/vendor.img.sha256
           if-no-files-found: error
           retention-days: 14
+          archive: false
