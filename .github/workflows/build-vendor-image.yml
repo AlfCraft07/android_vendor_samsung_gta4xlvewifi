@@ -3,9 +3,9 @@ name: Build vendor.img
 on:
   push:
     branches:
-      - P613XXS8FZI4
+      - ROManitas-U8F
       - main
-      - master
+      - modern
     paths-ignore:
       - '**.md'
       - '.gitignore'
@@ -18,7 +18,7 @@ on:
       fs_type:
         description: 'Filesystem type (erofs or ext4)'
         required: true
-        default: 'erofs'
+        default: 'ext4'
         type: choice
         options:
           - erofs
@@ -42,12 +42,12 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends erofs-utils
+          sudo apt-get install -y --no-install-recommends erofs-utils e2fsprogs coreutils
 
       - name: Build vendor.img
         run: |
           chmod +x ./build.sh tools/*
-          ./build.sh out "${{ inputs.fs_type || 'erofs' }}"
+          ./build.sh out "${{ inputs.fs_type || 'ext4' }}"
 
       - name: Checksum vendor.img
         run: |
@@ -64,7 +64,7 @@ jobs:
           ### :package: Vendor Image Build Summary
           | Metric | Value |
           |---|---|
-          | **Filesystem** | ${{ inputs.fs_type || 'erofs' }} |
+          | **Filesystem** | ${{ inputs.fs_type || 'ext4' }} |
           | **Image Size** | $(( image_size / 1024 / 1024 )) MB (\`$image_size\` bytes) |
           | **Partition Limit** | $(( partition_size / 1024 / 1024 )) MB (\`$partition_size\` bytes) |
           | **Capacity Used** | **$usage_pct%** |
@@ -72,11 +72,10 @@ jobs:
           EOF
 
       - name: Upload vendor.img
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
-          name: vendor-img-${{ github.sha }}
           path: |
             out/vendor.img
-            out/vendor.img.sha256
           if-no-files-found: error
           retention-days: 14
+          archive: false
