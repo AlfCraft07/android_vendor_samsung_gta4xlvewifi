@@ -2827,4 +2827,4 @@
 /vendor/saiv/image_understanding/db/srr_interaction u:object_r:vendor_snap_file:s0
 /vendor/saiv/image_understanding/db/srr_interaction(/.*)? u:object_r:vendor_snap_file:s0
 /vendor/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn\.tflite u:object_r:vendor_snap_file:s0
-/vendor/ueventd\.rc u:object_r:vendor_file:s0
+/vendor/etc/ueventd\.rc u:object_r:vendor_file:s0

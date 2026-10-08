@@ -2458,4 +2458,4 @@ vendor/saiv/image_understanding/db/sce_detector 0 2000 0755
 vendor/saiv/image_understanding/db/sce_detector/sce_detector_cnn.tflite 0 0 0644
 vendor/saiv/image_understanding/db/srr_interaction 0 2000 0755
 vendor/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn.tflite 0 0 0644
-vendor/ueventd.rc 0 0 0644
+vendor/etc/ueventd.rc 0 0 0644
