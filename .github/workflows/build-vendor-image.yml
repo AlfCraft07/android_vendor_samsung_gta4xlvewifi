@@ -3,9 +3,9 @@ name: Build vendor.img
 on:
   push:
     branches:
-      - ROManitas-U8F
+      - P613XXS8FZI4
       - main
-      - modern
+      - master
     paths-ignore:
       - '**.md'
       - '.gitignore'
@@ -18,7 +18,7 @@ on:
       fs_type:
         description: 'Filesystem type (erofs or ext4)'
         required: true
-        default: 'ext4'
+        default: 'erofs'
         type: choice
         options:
           - erofs
@@ -42,12 +42,12 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends erofs-utils e2fsprogs coreutils
+          sudo apt-get install -y --no-install-recommends erofs-utils
 
       - name: Build vendor.img
         run: |
           chmod +x ./build.sh tools/*
-          ./build.sh out "${{ inputs.fs_type || 'ext4' }}"
+          ./build.sh out "${{ inputs.fs_type || 'erofs' }}"
 
       - name: Checksum vendor.img
         run: |
@@ -64,7 +64,7 @@ jobs:
           ### :package: Vendor Image Build Summary
           | Metric | Value |
           |---|---|
-          | **Filesystem** | ${{ inputs.fs_type || 'ext4' }} |
+          | **Filesystem** | ${{ inputs.fs_type || 'erofs' }} |
           | **Image Size** | $(( image_size / 1024 / 1024 )) MB (\`$image_size\` bytes) |
           | **Partition Limit** | $(( partition_size / 1024 / 1024 )) MB (\`$partition_size\` bytes) |
           | **Capacity Used** | **$usage_pct%** |
