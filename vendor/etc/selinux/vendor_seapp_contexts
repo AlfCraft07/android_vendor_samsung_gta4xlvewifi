@@ -1,0 +1,114 @@
+user=_app seinfo=tango name=com.google.tango:app domain=untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.qualcomm.timeservice domain=vendor_timeservice_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=.qtidataservices domain=vendor_qtidataservices_app type=app_data_file levelFrom=all
+user=radio seinfo=platform name=.imshelperservice domain=vendor_imshelper_app type=vendor_radio_data_file
+user=_app seinfo=platform name=com.qualcomm.qti.qms.service.trustzoneaccess domain=vendor_tzas_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qti.ltebc domain=vendor_embmssl_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.qms.service.connectionsecurity domain=vendor_cs_app type=app_data_file levelFrom=all
+user=_app seinfo=ssgapp domain=vendor_ssg_app name=com.qualcomm.qti.qms.service.connectionsecurity type=app_data_file levelFrom=all
+user=_app seinfo=ssgapp domain=vendor_ssg_app name=com.qualcomm.qti.qms.service.telemetry type=app_data_file levelFrom=all
+user=_app seinfo=ssgapp domain=vendor_ssg_app name=com.qualcomm.qti.qms.service.trustzoneaccess type=app_data_file levelFrom=all
+user=system seinfo=platform name=com.qualcomm.qti.perfdump domain=vendor_perfdump_app type=system_app_data_file
+user=_app seinfo=platform name=.pasr domain=vendor_powerservice_app type=app_data_file levelFrom=all
+user=system seinfo=platform name=.pdtapps domain=vendor_pdt_app type=system_app_data_file
+user=_app seinfo=platform name=com.qualcomm.qti.usta domain=vendor_usta_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.sensors.qsensortest domain=vendor_qsta_app type=app_data_file
+user=system seinfo=platform name=com.qualcomm.qti.ustaservice domain=vendor_ustaservice_app type=system_app_data_file
+user=_app seinfo=platform name=com.qualcomm.qti.libsochelpertest domain=vendor_libsochelpertest_app type=app_data_file levelFrom=all
+user=system seinfo=platform name=com.qti.diagservices domain=qtidiagservices_app type=system_app_data_file
+user=_app isPrivApp=true name=org.codeaurora.snapcam domain=vendor_snapcam_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qti.vtloopback domain=vtloopback_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qct.dlt levelFrom=all domain=vendor_location_app_test type=app_data_file
+user=_app seinfo=platform name=com.qualcomm.qti.qlogcat levelFrom=all domain=vendor_location_app_test type=app_data_file
+user=system seinfo=platform name=.loopbackservice domain=vendor_qtiloopback_app type=system_app_data_file
+user=system seinfo=platform name=qcom.cta.cta_ui domain=vendor_cta_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.qti.logkit.lite domain=vendor_logkit_app type=system_app_data_file
+user=_app seinfo=platform domain=vendor_pdt_app name=com.quicinc.framework.debugapp levelFrom=all type=app_data_file
+user=_app seinfo=platform name=com.qualcomm.qti.dualstaapp domain=vendor_dualsta_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.cam2test domain=vendor_sys_seccam2_app type=app_data_file levelFrom=all
+user=system seinfo=platform name=com.qualcomm.wrd.ue.kpitool.base domain=vendor_cta_app type=system_app_data_file
+user=_app seinfo=sysmonapp domain=vendor_sysmonapp_app_test name=com.qualcomm.sysmonappInternal type=app_data_file levelFrom=all
+user=_app seinfo=platform domain=vendor_sysmonapp_app_test name=com.qualcomm.sysmonappInternal type=app_data_file levelFrom=all
+user=_app seinfo=platform domain=vendor_sysmonapp_app_test name=com.qualcomm.qti.sysmonappExternal type=app_data_file levelFrom=all
+user=system seinfo=platform name=com.qualcomm.dsdstesterapp domain=mst_test_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.qti.dsdslogger domain=mst_test_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.scriptmanager domain=mst_test_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.testhelper domain=mst_test_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.fst.CrashMonitor domain=mst_test_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.fst.STE domain=mst_test_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.fst.executor domain=mst_test_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.fst.sniffer domain=mst_test_app type=system_app_data_file
+user=_app seinfo=platform name=com.samsung.ucm.baiplugin domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.sec.smartcard.manager domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=sec_untrusted name=com.sec.android.service.singlesignon domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=sec_untrusted name=com.sds.stsm.esetest domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.android.oneconnect* domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=aasa_platform domain=aasa_platform_app type=app_data_file levelFrom=user
+user=_app seinfo=aasa_blocked domain=blocked_app type=app_data_file levelFrom=user
+user=system seinfo=aasa_blocked domain=blocked_app type=app_data_file
+user=_app seinfo=trustonicpartner domain=trustonicpartner_app type=app_data_file levelFrom=user
+user=_app minTargetSdkVersion=28 seinfo=trustonicpartner domain=trustonicpartner_app type=app_data_file levelFrom=all
+user=_app minTargetSdkVersion=29 seinfo=trustonicpartner domain=trustonicpartner_app type=app_data_file levelFrom=all
+user=_app minTargetSdkVersion=30 seinfo=trustonicpartner domain=trustonicpartner_app type=app_data_file levelFrom=all
+user=_app seinfo=good_trustonicpartner domain=trustonicpartner_app type=app_data_file levelFrom=user
+user=oneseg domain=oneseg_apk type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.gd.mobicore.pa domain=mobicore_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.trustonic.tuiservice domain=mobicore_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.sdm.sdmviewer domain=platform_app type=app_data_file
+user=system seinfo=platform name=com.gd.mobicore.pa domain=teeregistryd_app
+user=system seinfo=platform name=com.trustonic.teeservice domain=teed_app
+user=vendor_asf_fileshare seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_asf_mediashare seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_asf_awareshare seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_bcmgr seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_cmhservice seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_visionservice seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_advmodem seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_samsungcloud seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_smds seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_intelligenceservice seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_send_help_msg seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_knoxcore seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_spass seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=oem_5013 seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=dsms seinfo=platform name=com.samsung.android.dsms domain=dsms_app type=app_data_file levelFrom=user
+user=vendor_adaptive_brightness seinfo=platform name=com.samsung.adaptivebrightnessgo domain=platform_app type=app_data_file levelFrom=user
+user=oem_5021 seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=spass seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=_app seinfo=release name=com.sec.android.app.shealth* domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=shealth name=com.sec.android.app.shealth* domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=knoxcore seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=_app seinfo=samsung name=com.samsung.android.voicewakeup domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=system seinfo=platform name=com.android.sec.backup.svc domain=blocked_app type=system_app_data_file
+user=_app seinfo=platform name=com.android.sec.backup.svc domain=blocked_app type=app_data_file
+user=oem_5018 seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_networkdiagnostic seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_ipsgeofence seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=oem_5014 seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=system seinfo=platform name=com.sec.android.systemupdate domain=spu_app type=app_data_file
+user=vendor_mdxkit seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_sharelive seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=oem_5011 seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=oem_5016 seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=uwb seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.android.app.kfa domain=kfa_app type=app_data_file
+user=oem_5003 seinfo=platform domain=platform_app type=privapp_data_file levelFrom=user
+user=oem_5004 seinfo=platform domain=platform_app type=privapp_data_file levelFrom=user
+user=oem_5006 seinfo=platform domain=platform_app type=privapp_data_file levelFrom=user
+user=oem_5009 seinfo=platform domain=platform_app type=privapp_data_file levelFrom=user
+user=oem_5010 seinfo=platform domain=platform_app type=privapp_data_file levelFrom=user
+user=oem_5022 seinfo=platform domain=platform_app type=privapp_data_file levelFrom=user
+user=oem_5023 seinfo=platform domain=platform_app type=privapp_data_file levelFrom=user
+user=oem_5025 seinfo=platform domain=platform_app type=privapp_data_file levelFrom=user
+user=oem_5026 seinfo=platform domain=platform_app type=privapp_data_file levelFrom=user
+user=_app seinfo=platform name=com.sec.android.app.safetyassurance domain=platform_app type=privapp_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.android.scpm domain=platform_app type=privapp_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.android.scloud domain=platform_app type=privapp_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.android.rubin.app domain=platform_app type=privapp_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.android.beaconmanager domain=platform_app type=privapp_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.cmh domain=platform_app type=privapp_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.faceservice domain=platform_app type=privapp_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.android.app.sharelive domain=platform_app type=privapp_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.android.mdx.kit domain=platform_app type=privapp_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.android.ipsgeofence domain=platform_app type=privapp_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.android.networkdiagnostic domain=platform_app type=privapp_data_file levelFrom=user

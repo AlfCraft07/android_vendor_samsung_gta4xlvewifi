@@ -1,0 +1,253 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.vendor.brand=samsung
+ro.product.vendor.device=gta4xlvewifi
+ro.product.vendor.manufacturer=samsung
+ro.product.vendor.model=SM-P613
+ro.product.vendor.name=gta4xlvewifixx
+ro.vendor.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+ro.vendor.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.vendor.product.cpu.abilist64=arm64-v8a
+ro.vendor.build.date=Sat Nov  7 13:04:32 UTC 2026
+ro.vendor.build.date.utc=1794056672
+ro.vendor.build.fingerprint=samsung/gta4xlvewifixx/gta4xlvewifi:17/CP2A.260605.016/P613XXU8ZZK1:user/release-keys
+ro.vendor.build.id=CP2A.260605.016
+ro.vendor.build.uuid=6Qou28-HqX1P0qkgSSed18yzaWvqcHfyiibo3cuWISc
+ro.vendor.build.tags=release-keys
+ro.vendor.build.type=userdebug
+ro.vendor.build.version.incremental=P613XXU8ZZK1
+ro.vendor.build.version.release=17
+ro.vendor.build.version.release_or_codename=17
+ro.vendor.build.version.sdk=37
+ro.vendor.build.version.sdk_full=37.0
+####################################
+# from device/samsung/sm7125-common/vendor.prop
+####################################
+# Audio
+af.fast_track_multiplier=1
+ro.af.client_heap_size_kbyte=7168
+vendor.audio_hal.period_size=192
+ro.vendor.audio.sdk.fluencetype=none
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.tmic.enabled=false
+persist.vendor.audio.spv3.enable=true
+persist.vendor.audio.avs.afe_api_version=2
+vendor.audio.tunnel.encode=false
+persist.vendor.audio.ras.enabled=false
+vendor.audio.offload.buffer.size.kb=32
+vendor.audio.offload.track.enable=true
+vendor.voice.path.for.pcm.voip=true
+vendor.audio.offload.multiaac.enable=true
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
+vendor.audio.offload.multiple.enabled=false
+vendor.audio.offload.passthrough=false
+ro.vendor.audio.sdk.ssr=false
+vendor.audio.offload.gapless.enabled=true
+vendor.audio.safx.pbe.enabled=false
+vendor.audio.parser.ip.buffer.size=262144
+vendor.audio.hal.boot.timeout.ms=20000
+vendor.audio.use.sw.alac.decoder=true
+vendor.audio.use.sw.ape.decoder=true
+vendor.audio.use.sw.mpegh.decoder=true
+vendor.audio.hw.aac.encoder=true
+vendor.audio_hal.in_period_size=144
+vendor.audio_hal.period_multiplier=4
+vendor.audio.adm.buffering.ms=3
+vendor.audio.volume.headset.gain.depcal=true
+persist.vendor.audio.fluence.voicecomm=true
+vendor.audio.hal.output.suspend.supported=true
+aaudio.mmap_policy=2
+aaudio.mmap_exclusive_policy=2
+aaudio.hw_burst_min_usec=2000
+vendor.audio.enable.mirrorlink=false
+persist.vendor.audio.voicecall.speaker.stereo=true
+vendor.audio.feature.spkr_prot.enable=true
+vendor.audio.feature.a2dp_offload.enable=true
+vendor.audio.feature.compr_voip.enable=true
+vendor.audio.feature.compress_meta_data.enable=true
+vendor.audio.feature.deepbuffer_as_primary.enable=true
+vendor.audio.feature.display_port.enable=true
+vendor.audio.feature.fm.enable=true
+vendor.audio.feature.hdmi_edid.enable=true
+vendor.audio.feature.hfp.enable=true
+vendor.audio.feature.usb_offload.enable=true
+vendor.audio.feature.snd_mon.enable=true
+vendor.audio.feature.multi_voice_session.enable=false
+vendor.audio.feature.external_dsp.enable=false
+vendor.audio.feature.external_speaker.enable=false
+vendor.audio.feature.hwdep_cal.enable=false
+vendor.audio.feature.concurrent_capture.enable=false
+vendor.audio.feature.maxx_audio.enable=false
+vendor.audio.feature.audiozoom.enable=false
+vendor.audio.feature.incall_music.enable=true
+ro.config.vc_call_vol_steps=8
+# Bluetooth
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+ro.bluetooth.a2dp_offload.supported=true
+persist.bluetooth.a2dp_offload.disabled=false
+persist.vendor.bt.aac_frm_ctl.enabled=true
+vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
+ro.vendor.bluetooth.wipower=false
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+persist.vendor.qcom.bluetooth.scram.enabled=true
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
+bluetooth.device.class_of_device=90,2,12
+bluetooth.profile.asha.central.enabled=true
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.avrcp.target.enabled=true
+bluetooth.profile.bas.client.enabled=true
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.hid.device.enabled=true
+bluetooth.profile.hid.host.enabled=true
+bluetooth.profile.map.server.enabled=true
+bluetooth.profile.opp.enabled=true
+bluetooth.profile.pan.nap.enabled=true
+bluetooth.profile.pan.panu.enabled=true
+bluetooth.profile.pbap.server.enabled=true
+bluetooth.profile.sap.server.enabled=true
+# Camera
+camera.disable_zsl_mode=1
+ro.camera.notify_nfc=1
+# Chipset
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM7125
+# Crypto
+ro.crypto.metadata_init_delete_all_keys.enabled=false
+ro.crypto.volume.filenames_mode=aes-256-cts
+# Display
+debug.egl.hw=0
+debug.sf.disable_backpressure=1
+debug.sf.early_app_phase_offset_ns=100000
+debug.sf.early_gl_app_phase_offset_ns=100000
+debug.sf.early_gl_phase_offset_ns=100000
+debug.sf.early_phase_offset_ns=100000
+debug.sf.enable_gl_backpressure=1
+debug.sf.high_fps_early_gl_phase_offset_ns=100000
+debug.sf.high_fps_early_phase_offset_ns=100000
+debug.sf.high_fps_late_app_phase_offset_ns=100000
+debug.sf.high_fps_late_sf_phase_offset_ns=100000
+debug.sf.hw=0
+persist.sys.sf.color_saturation=1.0
+persist.sys.sf.hs_mode=0
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+ro.opengles.version=196610
+ro.surface_flinger.supports_background_blur=1
+vendor.display.comp_mask=0
+vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
+vendor.display.disable_decimation=1
+vendor.display.disable_dynamic_fps=1
+vendor.display.disable_excl_rect=0
+vendor.display.disable_ext_anim=1
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_inline_rotator=1
+vendor.display.disable_scaler=0
+vendor.display.disable_ui_3d_tonemap=1
+vendor.display.enable_default_color_mode=1
+vendor.display.enable_null_display=0
+vendor.display.enable_optimize_refresh=1
+vendor.display.idle_time=0
+vendor.display.idle_time_inactive=0
+vendor.gralloc.disable_ubwc=0
+# Gatekeeper
+ro.hardware.gatekeeper=mdfpp
+# Keystore
+ro.hardware.keystore=mdfpp
+# Media
+# debug.c2.use_dmabufheaps=1
+debug.stagefright.c2inputsurface=-1
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+# Power HAL
+vendor.powerhal.disp.idle_support=false
+# RIL
+ro.radio.noril=yes
+# USB
+vendor.usb.diag.func.name=diag
+vendor.usb.use_ffs_mtp=0
+vendor.usb.dpl.inst.name=dpl
+vendor.usb.qdss.inst.name=qdss_sw
+vendor.usb.rmnet.func.name=gsi
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=gsi
+vendor.usb.use_gadget_hal=0
+# Wifi
+# wifi.aware.interface=wifi-aware0
+####################################
+# from device/samsung/gta4xlvewifi/vendor.prop
+####################################
+# Bluetooth
+bluetooth.device.default_name=Galaxy Tab S6 Lite
+####################################
+# from android-info.prop
+####################################
+ro.build.expect.bootloader-min=8
+####################################
+# from variable ADDITIONAL_VENDOR_PROPERTIES
+####################################
+ro.bionic.arch=arm64
+ro.bionic.cpu_variant=cortex-a76
+ro.bionic.2nd_arch=arm
+ro.bionic.2nd_cpu_variant=
+:=cortex-a55
+dalvik.vm.isa.arm64.variant=cortex-a76
+dalvik.vm.isa.arm64.features=default
+dalvik.vm.isa.arm.variant=
+:=cortex-a55
+dalvik.vm.isa.arm.features=default
+ro.minui.pixel_format=RGBX_8888
+ro.boot.dynamic_partitions=true
+ro.product.first_api_level=31
+ro.board.api_level=202604
+ro.board.api_frozen=true
+ro.vendor.build.security_patch=2026-09-05
+ro.product.board=atoll
+ro.board.platform=atoll
+ro.hwui.use_vulkan=
+ro.sf.lcd_density=240
+ro.build.ab_update=false
+ro.product.build.16k_page.enabled=false
+####################################
+# from variable PRODUCT_VENDOR_PROPERTIES
+####################################
+dalvik.vm.heapstartsize=16m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.5
+dalvik.vm.heapminfree=8m
+dalvik.vm.heapmaxfree=32m
+ro.zygote=zygote64_32
+keyguard.no_require_sim=true
+ro.com.android.dataroaming=true
+ro.config.ringtone=Ring_Synth_04.ogg
+# Removed by post_process_props.py because overridden by ro.config.notification_sound?=OnTheHunt.ogg
+#ro.config.notification_sound?=pixiedust.ogg
+persist.sys.dalvik.vm.lib.2=libart.so
+tombstoned.max_tombstone_count=50
+ro.logd.size.stats=64K
+log.tag.stats_log=I
+ro.carrier=wifi-only
+ro.config.notification_sound=OnTheHunt.ogg
+ro.config.alarm_alert=Alarm_Classic.ogg
+ro.recovery.usb.vid=18D1
+ro.recovery.usb.adb.pid=D001
+ro.recovery.usb.fastboot.pid=4EE0
+# Removed by post_process_props.py because overridden by ro.zygote=zygote64_32
+#ro.zygote?=zygote32
+####################################
+# from variable PRODUCT_DEFAULT_PROPERTY_OVERRIDES
+####################################
+####################################
+# from variable PRODUCT_PROPERTY_OVERRIDES
+####################################
+# end of file

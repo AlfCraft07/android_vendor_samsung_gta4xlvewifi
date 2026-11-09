@@ -1,0 +1,26 @@
+<manifest version="1.0" type="device">
+    <hal override="true" format="hidl">
+        <name>android.hardware.radio</name>
+        <transport>hwbinder</transport>
+    </hal>
+    <hal override="true" format="hidl">
+        <name>android.hardware.radio.deprecated</name>
+        <transport>hwbinder</transport>
+    </hal>
+    <hal override="true" format="hidl">
+        <name>android.hardware.radio.config</name>
+        <transport>hwbinder</transport>
+    </hal>
+    <hal override="true" format="hidl">
+        <name>android.hardware.tetheroffload.config</name>
+        <transport>hwbinder</transport>
+    </hal>
+    <hal override="true" format="hidl">
+        <name>android.hardware.tetheroffload.control</name>
+        <transport>hwbinder</transport>
+	</hal>
+    <hal override="true" format="hidl">
+        <name>vendor.mediatek.hardware.meta</name>
+        <transport>hwbinder</transport>
+    </hal>
+</manifest>
