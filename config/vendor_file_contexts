@@ -678,6 +678,7 @@
 /vendor/etc/vintf/manifest/manifest_android\.hardware\.drm@1\.3-service\.widevine\.xml u:object_r:vendor_configs_file:s0
 /vendor/etc/vintf/manifest/memtrack_qti\.xml u:object_r:vendor_configs_file:s0
 /vendor/etc/vintf/manifest/radio_manifest_wifionly\.xml u:object_r:vendor_configs_file:s0
+/vendor/etc/vintf/manifest/vendor\.samsung\.hardware\.radio\.exclude\.qcom\.xml u:object_r:vendor_configs_file:s0
 /vendor/etc/vintf/manifest/secaudiohalaidl_manifest\.xml u:object_r:vendor_configs_file:s0
 /vendor/etc/vintf/manifest/seh_bluetooth_audio\.xml u:object_r:vendor_configs_file:s0
 /vendor/etc/vintf/manifest/vendor\.lineage\.health-service\.default\.xml u:object_r:vendor_configs_file:s0
