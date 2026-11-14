@@ -2377,3 +2377,16 @@ vendor/lib64/libsensorcambridge.so 0 0 0644
 vendor/lib64/libvdis_core.so 0 0 0644
 vendor/lib64/camera/components/com.samsung.node.uniplugin_capture.so 0 0 0644
 vendor/lib64/camera/components/com.samsung.node.uniplugin_recording.so 0 0 0644
+vendor/lib64/libBeauty_v4.camera.samsung.so 0 0 0644
+vendor/lib64/libDeviceInfoProvider.so 0 0 0644
+vendor/lib64/libHDRVerifier_v1.camera.samsung.so 0 0 0644
+vendor/lib64/libHprFace_GAE_api.camera.samsung.so 0 0 0644
+vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so 0 0 0644
+vendor/lib64/libIDDQD_core.so 0 0 0644
+vendor/lib64/libOpenCv.camera.samsung.so 0 0 0644
+vendor/lib64/libSceneDetector_v1.camera.samsung.so 0 0 0644
+vendor/lib64/libfocuspeaking.so 0 0 0644
+vendor/lib64/libimagecodec_native.quram.so 0 0 0644
+vendor/lib64/libsavscmn.so 0 0 0644
+vendor/lib64/libsmartfocusengine.so 0 0 0644
+vendor/lib64/libsnap_vndk.so 0 0 0644

@@ -2368,3 +2368,16 @@
 /vendor/lib64/libvdis_core\.so u:object_r:vendor_file:s0
 /vendor/lib64/camera/components/com\.samsung\.node\.uniplugin_capture\.so u:object_r:vendor_file:s0
 /vendor/lib64/camera/components/com\.samsung\.node\.uniplugin_recording\.so u:object_r:vendor_file:s0
+/vendor/lib64/libBeauty_v4\.camera\.samsung\.so u:object_r:vendor_file:s0
+/vendor/lib64/libDeviceInfoProvider\.so u:object_r:vendor_file:s0
+/vendor/lib64/libHDRVerifier_v1\.camera\.samsung\.so u:object_r:vendor_file:s0
+/vendor/lib64/libHprFace_GAE_api\.camera\.samsung\.so u:object_r:vendor_file:s0
+/vendor/lib64/libHpr_RecGAE_cvFeature_v1\.0\.camera\.samsung\.so u:object_r:vendor_file:s0
+/vendor/lib64/libIDDQD_core\.so u:object_r:vendor_file:s0
+/vendor/lib64/libOpenCv\.camera\.samsung\.so u:object_r:vendor_file:s0
+/vendor/lib64/libSceneDetector_v1\.camera\.samsung\.so u:object_r:vendor_file:s0
+/vendor/lib64/libfocuspeaking\.so u:object_r:vendor_file:s0
+/vendor/lib64/libimagecodec_native\.quram\.so u:object_r:vendor_file:s0
+/vendor/lib64/libsavscmn\.so u:object_r:vendor_file:s0
+/vendor/lib64/libsmartfocusengine\.so u:object_r:vendor_file:s0
+/vendor/lib64/libsnap_vndk\.so u:object_r:vendor_file:s0
