@@ -2375,3 +2375,4 @@ vendor/lib64/libhypermotion_core.so 0 0 0644
 vendor/lib64/libofflinelog.so 0 0 0644
 vendor/lib64/libsensorcambridge.so 0 0 0644
 vendor/lib64/libvdis_core.so 0 0 0644
+vendor/lib64/camera/components/com.samsung.node.uniplugin_capture.so 0 0 0644
