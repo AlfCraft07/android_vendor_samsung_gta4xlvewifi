@@ -2360,3 +2360,9 @@
 /vendor/lib64/libswregistrationalgo\.so u:object_r:vendor_file:s0
 /vendor/lib64/hw/grcam\.atoll\.so u:object_r:vendor_file:s0
 /vendor/lib64/hw/com\.samsung\.chi\.override\.so u:object_r:vendor_file:s0
+/vendor/lib64/camera/components/com\.samsung\.node\.uniplugin_vdis\.so u:object_r:vendor_file:s0
+/vendor/lib64/libchilog\.so u:object_r:vendor_file:s0
+/vendor/lib64/libhypermotion_core\.so u:object_r:vendor_file:s0
+/vendor/lib64/libofflinelog\.so u:object_r:vendor_file:s0
+/vendor/lib64/libsensorcambridge\.so u:object_r:vendor_file:s0
+/vendor/lib64/libvdis_core\.so u:object_r:vendor_file:s0

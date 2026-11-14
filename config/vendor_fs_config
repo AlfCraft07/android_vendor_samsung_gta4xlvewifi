@@ -2369,3 +2369,9 @@ vendor/etc/selinux/vendor_sepolicy_version 0 0 0644
 vendor/lib64/libcolor-default.so 0 0 0644
 vendor/lib64/libpadm.so 0 0 0644
 vendor/lib64/libswregistrationalgo.so 0 0 0644
+vendor/lib64/camera/components/com.samsung.node.uniplugin_vdis.so 0 0 0644
+vendor/lib64/libchilog.so 0 0 0644
+vendor/lib64/libhypermotion_core.so 0 0 0644
+vendor/lib64/libofflinelog.so 0 0 0644
+vendor/lib64/libsensorcambridge.so 0 0 0644
+vendor/lib64/libvdis_core.so 0 0 0644
