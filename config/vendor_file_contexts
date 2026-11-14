@@ -2367,3 +2367,4 @@
 /vendor/lib64/libsensorcambridge\.so u:object_r:vendor_file:s0
 /vendor/lib64/libvdis_core\.so u:object_r:vendor_file:s0
 /vendor/lib64/camera/components/com\.samsung\.node\.uniplugin_capture\.so u:object_r:vendor_file:s0
+/vendor/lib64/camera/components/com\.samsung\.node\.uniplugin_recording\.so u:object_r:vendor_file:s0
