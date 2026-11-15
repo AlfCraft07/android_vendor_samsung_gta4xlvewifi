@@ -31,6 +31,9 @@ rm -f "$OUT_IMG"
 # Clean VCS dummy artifacts (.gitkeep, .gitignore) so mkfs.erofs canned fs_config won't fail
 find "$SOURCE_DIR" -name ".git*" -delete 2>/dev/null || true
 
+# Ensure empty partition mountpoints exist (Git does not track empty directories)
+mkdir -p "$SOURCE_DIR/dsp" "$SOURCE_DIR/firmware-modem" "$SOURCE_DIR/firmware_mnt"
+
 restore_vcs_artifacts() {
     # Restore any tracked .gitkeep files in git working tree
     git checkout -- "$SOURCE_DIR" 2>/dev/null || true
@@ -63,6 +66,7 @@ if [ "$FS_TYPE" = "erofs" ]; then
         -z lz4hc \
         -b 4096 \
         -T 1199145600 \
+        -E ^xattr-name-filter \
         "$OUT_IMG" "$SOURCE_DIR"
 
     if command -v fsck.erofs >/dev/null 2>&1; then

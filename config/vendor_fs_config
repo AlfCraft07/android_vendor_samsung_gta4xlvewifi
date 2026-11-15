@@ -85,7 +85,6 @@ vendor/bin/hvdcp_opti 0 2000 0755
 vendor/bin/hw 0 2000 0751
 vendor/bin/hw/android.hardware.audio.service 0 2000 0755
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti 1002 1002 0755 capabilities=0x1000
-vendor/bin/hw/android.hardware.camera.provider-service_32.samsung 0 2000 0755
 vendor/bin/hw/android.hardware.cas@1.2-service 0 2000 0755
 vendor/bin/hw/android.hardware.drm-service.clearkey 0 2000 0755
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine 0 2000 0755
@@ -371,7 +370,6 @@ vendor/etc/group 0 0 0644
 vendor/etc/init 0 2000 0755
 vendor/etc/init/android.hardware.audio.service.rc 0 0 0644
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc 0 0 0644
-vendor/etc/init/android.hardware.camera.provider-service_32.samsung.rc 0 0 0644
 vendor/etc/init/android.hardware.drm-service.clearkey.rc 0 0 0644
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc 0 0 0644
 vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc 0 0 0644
@@ -844,11 +842,6 @@ vendor/lib/camera 0 2000 0755
 vendor/lib/camera/com.qti.eeprom.sec2qcconversion.so 0 0 0644
 vendor/lib/camera/com.samsung.sensor.gc5035.so 0 0 0644
 vendor/lib/camera/com.samsung.sensor.s5k4ha.so 0 0 0644
-vendor/lib/camera/com.samsung.sensormodule.0_lsi_s5k4ha.bin 0 0 0644
-vendor/lib/camera/com.samsung.sensormodule.1_lsi_gc5035.bin 0 0 0644
-vendor/lib/camera/com.samsung.sensormodule.8_lsi_gc5035_full.bin 0 0 0644
-vendor/lib/camera/com.samsung.tuned.gc5035.bin 0 0 0644
-vendor/lib/camera/com.samsung.tuned.lsi_s5k4ha.bin 0 0 0644
 vendor/lib/camera/components 0 2000 0755
 vendor/lib/camera/components/com.qti.camx.chiiqutils.so 0 0 0644
 vendor/lib/camera/components/com.qti.eisv2.so 0 0 0644
@@ -923,9 +916,7 @@ vendor/lib/hw/audio.primary.atoll.so 0 0 0644
 vendor/lib/hw/audio.primary.default.so 0 0 0644
 vendor/lib/hw/audio.r_submix.default.so 0 0 0644
 vendor/lib/hw/audio.usb.default.so 0 0 0644
-vendor/lib/hw/camera.qcom.so 0 0 0644
 vendor/lib/hw/camera.unihal.default.so 0 0 0644
-vendor/lib/hw/com.samsung.chi.override.so 0 0 0644
 vendor/lib/hw/gralloc.default.so 0 0 0644
 vendor/lib/hw/hwcomposer.qcom.so 0 0 0644
 vendor/lib/hw/local_time.default.so 0 0 0644
@@ -970,8 +961,6 @@ vendor/lib/libadreno_utils.so 0 0 0644
 vendor/lib/libadsp_default_listener.so 0 0 0644
 vendor/lib/libadsprpc.so 0 0 0644
 vendor/lib/libalsautils.so 0 0 0644
-vendor/lib/libarcsoft_dualcam_portraitlighting.so 0 0 0644
-vendor/lib/libarcsoft_dualcam_portraitlighting_preview.so 0 0 0644
 vendor/lib/libarcsoft_picportrait_video.so 0 0 0644
 vendor/lib/libarcsoft_stereodistancemeasure.so 0 0 0644
 vendor/lib/libarcsoft_super_night_raw.so 0 0 0644
@@ -1044,8 +1033,6 @@ vendor/lib/libdrmutils.so 0 0 0644
 vendor/lib/libdsutils.so 0 0 0644
 vendor/lib/libdualcam_optical_zoom.so 0 0 0644
 vendor/lib/libdualcam_optical_zoom_control.so 0 0 0644
-vendor/lib/libdualcam_refocus_image.so 0 0 0644
-vendor/lib/libdualcam_refocus_video.so 0 0 0644
 vendor/lib/libdualcapture.so 0 0 0644
 vendor/lib/libeffects.so 0 0 0644
 vendor/lib/libeffectsconfig.so 0 0 0644
@@ -1592,6 +1579,7 @@ vendor/lib64/hw/audio.r_submix.default.so 0 0 0644
 vendor/lib64/hw/audio.usb.default.so 0 0 0644
 vendor/lib64/hw/camera.qcom.so 0 0 0644
 vendor/lib64/hw/camera.unihal.default.so 0 0 0644
+vendor/lib64/hw/grcam.atoll.so 0 0 0644
 vendor/lib64/hw/com.samsung.chi.override.so 0 0 0644
 vendor/lib64/hw/gatekeeper.mdfpp.so 0 0 0644
 vendor/lib64/hw/gralloc.default.so 0 0 0644
@@ -2366,3 +2354,26 @@ vendor/lib64/libcom.qti.chinodeutils.so 0 0 0644
 vendor/lib64/libdualcapture.so 0 0 0644
 vendor/etc/selinux/vendor_sepolicy_version 0 0 0644
 vendor/lib64/libcolor-default.so 0 0 0644
+vendor/lib64/libpadm.so 0 0 0644
+vendor/lib64/libswregistrationalgo.so 0 0 0644
+vendor/lib64/camera/components/com.samsung.node.uniplugin_vdis.so 0 0 0644
+vendor/lib64/libchilog.so 0 0 0644
+vendor/lib64/libhypermotion_core.so 0 0 0644
+vendor/lib64/libofflinelog.so 0 0 0644
+vendor/lib64/libsensorcambridge.so 0 0 0644
+vendor/lib64/libvdis_core.so 0 0 0644
+vendor/lib64/camera/components/com.samsung.node.uniplugin_capture.so 0 0 0644
+vendor/lib64/camera/components/com.samsung.node.uniplugin_recording.so 0 0 0644
+vendor/lib64/libBeauty_v4.camera.samsung.so 0 0 0644
+vendor/lib64/libDeviceInfoProvider.so 0 0 0644
+vendor/lib64/libHDRVerifier_v1.camera.samsung.so 0 0 0644
+vendor/lib64/libHprFace_GAE_api.camera.samsung.so 0 0 0644
+vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so 0 0 0644
+vendor/lib64/libIDDQD_core.so 0 0 0644
+vendor/lib64/libOpenCv.camera.samsung.so 0 0 0644
+vendor/lib64/libSceneDetector_v1.camera.samsung.so 0 0 0644
+vendor/lib64/libfocuspeaking.so 0 0 0644
+vendor/lib64/libimagecodec_native.quram.so 0 0 0644
+vendor/lib64/libsavscmn.so 0 0 0644
+vendor/lib64/libsmartfocusengine.so 0 0 0644
+vendor/lib64/libsnap_vndk.so 0 0 0644
