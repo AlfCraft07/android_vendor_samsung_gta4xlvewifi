@@ -2377,3 +2377,8 @@ vendor/lib64/libimagecodec_native.quram.so 0 0 0644
 vendor/lib64/libsavscmn.so 0 0 0644
 vendor/lib64/libsmartfocusengine.so 0 0 0644
 vendor/lib64/libsnap_vndk.so 0 0 0644
+vendor/bin/hw/vendor.samsung.hardware.light-service 0 2000 0755
+vendor/etc/init/lights-default-sec.rc 0 0 0644
+vendor/etc/vintf/manifest/lights-default-sec.xml 0 0 0644
+vendor/lib64/android.hardware.light-V2-ndk.so 0 0 0644
+vendor/lib64/vendor.samsung.hardware.light-V2-ndk.so 0 0 0644
