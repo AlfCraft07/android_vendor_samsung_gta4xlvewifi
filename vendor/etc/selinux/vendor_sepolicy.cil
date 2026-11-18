@@ -24225,3 +24225,7 @@
 (allow platform_app_202604 default_prop (property_service (set)))
 (allow platform_app_202604 exported_system_prop (property_service (set)))
 (allow system_app Sve_service (service_manager (add)))
+(allow vold_202604 system_prop_202604 (property_service (set)))
+(allow vold_202604 system_prop_202604 (file (read getattr map open)))
+(allow vold_202604 exported_system_prop_202604 (property_service (set)))
+(allow vold_202604 exported_system_prop_202604 (file (read getattr map open)))
