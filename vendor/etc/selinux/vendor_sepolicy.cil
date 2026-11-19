@@ -24229,3 +24229,4 @@
 (allow vold_202604 system_prop_202604 (file (read getattr map open)))
 (allow vold_202604 exported_system_prop_202604 (property_service (set)))
 (allow vold_202604 exported_system_prop_202604 (file (read getattr map open)))
+(allow hal_health_default hal_thermal_service (service_manager (find)))
