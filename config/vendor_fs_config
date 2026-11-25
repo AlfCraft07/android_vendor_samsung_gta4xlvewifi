@@ -2382,3 +2382,6 @@ vendor/etc/init/lights-default-sec.rc 0 0 0644
 vendor/etc/vintf/manifest/lights-default-sec.xml 0 0 0644
 vendor/lib64/android.hardware.light-V2-ndk.so 0 0 0644
 vendor/lib64/vendor.samsung.hardware.light-V2-ndk.so 0 0 0644
+vendor/bin/hw/android.hardware.thermal-service.qti 0 2000 0755
+vendor/etc/init/android.hardware.thermal-service.qti.rc 0 0 0644
+vendor/etc/vintf/manifest/android.hardware.thermal-service.qti.xml 0 0 0644
