@@ -176,6 +176,8 @@
 (genfscon sysfs "/devices/platform/soc/soc:qcom,smp2p-wpss/wakeup" (u object_r sysfs_wakeup ((s0) (s0))))
 (genfscon sysfs "/devices/platform/soc/890000.i2c/i2c-22/22-0049/" (u object_r sysfs_battery ((s0) (s0))))
 (genfscon sysfs "/devices/platform/soc/890000.i2c/i2c-22/22-0057/" (u object_r sysfs_battery ((s0) (s0))))
+(genfscon sysfs "/devices/platform/soc@0/8c0000.geniqup/890000.i2c/i2c-4/4-0049/power_supply" (u object_r sysfs_batteryinfo ((s0) (s0))))
+(genfscon sysfs "/devices/platform/soc@0/8c0000.geniqup/890000.i2c/i2c-4/4-0071/power_supply" (u object_r sysfs_batteryinfo ((s0) (s0))))
 (genfscon sysfs "/devices/platform/soc/soc:qcom,mincpubw/devfreq" (u object_r vendor_sysfs_devfreq ((s0) (s0))))
 (genfscon sysfs "/devices/virtual/net/bond0/queues/rx-0/rps_cpus" (u object_r vendor_sysfs_bond0 ((s0) (s0))))
 (genfscon sysfs "/devices/platform/soc/soc:qcom,smp2p-npu/wakeup" (u object_r sysfs_wakeup ((s0) (s0))))
